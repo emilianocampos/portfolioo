@@ -13,6 +13,7 @@ h2 {
   text-align: center !important;
   padding: 30px;
   font-weight: 900;
+  margin-bottom: 50px !important;
 }
 
 h3 {
@@ -128,6 +129,9 @@ p {
   background-color:rgb(59, 59, 59);;
  
  }
+ .dark-mode .sectiond{
+  background-color: #2b2b2b;
+}
 /*              */
 
 
@@ -138,7 +142,10 @@ p {
     border-radius: 200px;
     display: flex !important;
   }
-
+  .add{
+    display: grid;
+    justify-content: center;
+  }
   .card {
 
 
@@ -226,7 +233,10 @@ p {
   .menu-toggle {
     display: block;
   }
-
+  .img-fluid{
+    width: 100px !important;
+    height: 200px !important;
+  }
   .menu {
     display: none;
     flex-direction: column;
@@ -271,10 +281,11 @@ p {
   text-align: center;
   font-weight: 900;
 
+ 
 }
 
 span {
-  color: rgb(97, 53, 255);
+  color: #ee5522;
   font-weight: bold;
   font-size: 1.6rem;
 }
@@ -293,7 +304,8 @@ span {
 }
 
 .inta {
-  background-color: rgb(97, 53, 255);
+  background-color:    #ee5522;
+  ;
   width: 95px;
   height: 102px;
   border-radius: 20px;
@@ -302,7 +314,7 @@ span {
 
 .inta:hover {
 
-  background-color: #ee5522;
+  background-color: #8bff1f;
 
 }
 
@@ -323,6 +335,7 @@ button{
   transition:800ms ease all;
   outline:none;
   margin-bottom: 50px !important;
+  margin-top: 50px !important;
 }
 button:hover{
   background: rgb(255, 208, 53);
@@ -351,7 +364,7 @@ button:hover:before,button:hover:after{
 }
 
 .dark-mode button:hover{
-  background: rgb(97, 53, 255);
+  background: rgb(255, 255, 255);
   color:#070707;
   font-size: 1.7rem;
 }
@@ -362,6 +375,19 @@ button:hover:before,button:hover:after{
   right:0;
   height:2px;
   width:0;
-  background: #005df4;
+  background: #ee5522;
   transition:400ms ease all;
+}
+
+.sectiond{
+  background-color: #c1c700;
+}
+.lgo{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img-fluid{
+  width: 800px !important;
+  height: 400px !important;
+  border-radius: 40px !important;
 }

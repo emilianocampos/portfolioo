@@ -93,16 +93,8 @@ btn.addEventListener('click', () => {
     confirmButtonText: 'Si, Descargar'
   }).then((result) => {
     if (result.isConfirmed) {
-     
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-       
-        showConfirmButton: false,
-        timer: 1
-      })
 
-
+  
       setTimeout(function () {
 
         Swal.fire(
@@ -111,7 +103,7 @@ btn.addEventListener('click', () => {
 
           window.location.href = "./img/Emiliano_CamposCampazzo_CV (1).pdf"
         )
-      }, 3000);
+      }, 2000);
 
 
     }
@@ -120,3 +112,4 @@ btn.addEventListener('click', () => {
 
 
 })
+
