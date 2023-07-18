@@ -725,6 +725,32 @@ h1 {
   }
 }
 
+div:where(.swal2-container).swal2-center>.swal2-popup {
+  background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(93,0,0,1) 100%);
+}
+
+.swal2-title{
+  color: #ee5522;
+  font-size: 3rem !important;
+}
+.swal2-html-container{
+font-size: 2rem !important;
+
+}
+.swal2-icon {
+  background-color: rgb(0, 0, 0) !important;
+  color: rgb(255, 251, 0) !important;
+  border-color: rgb(255, 251, 0) !important;
+}
+
+.btn-primary{
+background-color: #ee5522!important;
+border-color: black !important;
+
+}
 .sectione {
   background-color: #e0e36f;
 }
+
+
