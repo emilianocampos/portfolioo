@@ -1,72 +1,22 @@
+  <nav>
+            <div class="menu-toggle">
+                <img src="./img/icons8-menu-50.png" alt="">
+            </div>
+            <div>
+                <ul class="menu">
 
-                    <div class="row ">
-
-                        <div data-aos="flip-right" class="col add">
-                            <div class="card " style="width: 18rem; ">
-                                <img src="./img/salud.jpg" class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Calculadora Prototipo Medicina</h5>
-                                    <div class="lgo">
-                                        <img src="./img/icons8-html-48.png" alt="">
-                                        <img src="./img/icons8-css-48.png" alt="">
-                                        <img src="./img/icons8-javascript-48.png" alt="">
-                                    </div>
-                                    <a href="https://emilianocampos.github.io/practica/" class="btn btn-primary">Ir a la
-                                        pagina</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div data-aos="flip-right" class="col add">
-                           <div data-aos="flip-right" class="col add">
-                            <div class="card " style="width: 18rem; ">
-                                <img src="./img/ebooks.jpg" class="card-img-top img-fluid" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Pagina Cliente: Venta de libro</h5>
-                                    <div class="lgo">
-                                        <img src="./img/icons8-html-48.png" alt="">
-                                        <img src="./img/icons8-css-48.png" alt="">
-
-                                    </div>
-                                    <a href="https://emilianocampos.github.io/maxilibro/" class="btn btn-primary">Go
-                                        somewhere</a>
-                                </div>
-                            </div>
-
-                            <div data-aos="flip-right" class="col add">
-                                <div class="col">
-                                    <div class="card " style="width: 18rem; ">
-                                        <img src="./img/conver.jpg" class="card-img-top img-fluid" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Conversor de moneda (en progreso)</h5>
-                                            <div class="lgo">
-                                                <img src="./img/icons8-html-48.png" alt="">
-                                                <img src="./img/icons8-sass-48.png" alt="">
-
-                                                <img src="./img/icons8-javascript-48.png" alt="">
-                                            </div>
-                                            <a href="https://emilianocampos.github.io/Proyct-emilianocampos/"
-                                                class="btn btn-primary">Ir a la pagina</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div data-aos="flip-right" class="col add container">
-                                    <div class="card " style="width: 18rem; ">
-                                        <img src="./img/qiz.jpg" class="card-img-top img-fluid" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Juego de trivia</h5>
-                                            <div class="lgo">
-                                                <img src="./img/icons8-html-48.png" alt="">
-                                                <img src="./img/icons8-css-48.png" alt="">
-                                                <img src="./img/icons8-javascript-48.png" alt="">
-                                            </div>
-                                            <a href="https://emilianocampos.github.io/cuestionario/"
-                                                class="btn btn-primary">Ir a la
-                                                pagina</a>
-                                        </div>
-                                    </div>
-                                </div>
-        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SOBRE MI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MIS PROYECTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CURRICULUM</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>

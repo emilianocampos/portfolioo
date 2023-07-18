@@ -49,14 +49,41 @@ AOS.init();
 
 //menu hambur
 
-let menuToggle = document.querySelector('.menu-toggle');
-menu = document.querySelector('.menu');
-
-menuToggle.addEventListener('click', function () {
-  menu.classList.toggle('active');
-});
-
 //chart.js
+
+
+let btn = document.getElementById('tn');
+
+btn.addEventListener('click', () => {
+  Swal.fire({
+    title: 'Se descargara un archivo .pdf',
+    text: "Estas de acuerdo?",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Si, Descargar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+
+  
+      setTimeout(function () {
+
+        Swal.fire(
+          'Su archivo se esta descargando',
+          'success',
+          
+          window.location.href = "./img/Emiliano_CamposCampazzo_CV (1).pdf"
+        )
+      }, 2000);
+
+
+    }
+  })
+  
+  
+
+})
 
 const ctx = document.getElementById('myChart');
 new Chart(ctx, {
@@ -79,37 +106,3 @@ new Chart(ctx, {
     }
   }
 });
-
-let btn = document.getElementById('tn');
-
-btn.addEventListener('click', () => {
-  Swal.fire({
-    title: 'Se descargara un archivo .pdf',
-    text: "Estas de acuerdo?",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'Si, Descargar'
-  }).then((result) => {
-    if (result.isConfirmed) {
-
-  
-      setTimeout(function () {
-
-        Swal.fire(
-          'Su archivo se esta descargando',
-          'success',
-
-          window.location.href = "./img/Emiliano_CamposCampazzo_CV (1).pdf"
-        )
-      }, 2000);
-
-
-    }
-  })
-
-
-
-})
-
