@@ -1,10 +1,12 @@
+//inicialización libreria AOS
+AOS.init();
 
-//Habilitar DM
+//Habilitar DM AÑADE UNA CLASE AL CSS
 function enableDarkMode() {
   document.body.classList.add('dark-mode');
-  localStorage.setItem('darkModeEnabled', 'true');
+ 
 }
-//Desabilitar DM
+//Desabilitar DM /sacar .darkmode
 function disableDarkMode() {
   document.body.classList.remove('dark-mode');
 
@@ -20,11 +22,7 @@ function toggleDarkMode() {
     enableDarkMode();
   }
 
-if (darkModeEnabled){
-  localStorage.setItem('dia',disableDarkMode() );
-}else if(!darkModeEnabled){
-  localStorage.setItem('a',enableDarkMode() );
-}
+ 
 
 }
 
@@ -48,8 +46,6 @@ button.addEventListener("click", function () {
   }
 
 });
-//inicialización libreria AOS
-AOS.init();
 
 
 //sweet alert boton descargar
@@ -123,3 +119,15 @@ new Chart(ctx, {
   }
 });
 
+//b 
+
+let btnForm = document.getElementById('btnform');
+
+btnForm.addEventListener('click', () => {
+
+  Swal.fire(
+    'Mensaje Enviado',
+    
+  )
+
+})

@@ -188,7 +188,9 @@ animation: qwe 2s ease 0s 1 normal forwards;
 .dark-mode nav a {
   color: rgb(255, 255, 255) !important;
 }
-
+.dark-mode .sectione{
+  background-color: black;
+}
 .dark-mode .card {
   background-color: black !important;
   color: white;
@@ -865,3 +867,4 @@ padding-bottom: 40px;
   justify-content: center;
 
 }
+
