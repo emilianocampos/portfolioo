@@ -55,10 +55,11 @@ p {
   display: flex !important;
   justify-content: center !important;
   margin-top: 50px;
-  background-color: rgb(255, 208, 53) !important;
+  background-color: #ffd035 !important;
   width: 573px !important;
   margin-bottom: 180px;
   border-radius: 40px !important;
+  box-shadow: 13px 13px 23px 5px #000 !important; 
 }
 .redes{
 
@@ -189,7 +190,7 @@ animation: qwe 2s ease 0s 1 normal forwards;
   color: rgb(255, 255, 255) !important;
 }
 .dark-mode .sectione{
-  background-color: black;
+  background-color: #535353;
 }
 .dark-mode .card {
   background-color: black !important;
@@ -198,7 +199,7 @@ animation: qwe 2s ease 0s 1 normal forwards;
 
 .dark-mode .sectionb {
   margin-top: 80px;
-  background-color: #202020;
+  background-color: #131313;
 }
 
 .dark-mode .inta:hover {
@@ -208,13 +209,13 @@ animation: qwe 2s ease 0s 1 normal forwards;
 }
 
 .dark-mode .sectionc {
-  background-color: rgb(59, 59, 59);
+  background-color: #626262;
   ;
 
 }
 
 .dark-mode .sectiond {
-  background-color: #2b2b2b;
+  background-color: #353535;
 }
 
 /*              */
@@ -376,10 +377,10 @@ animation: qwe 2s ease 0s 1 normal forwards;
 
 .sectionb {
   margin-top: 80px;
-  background-color: #ffd035;
+  background-color: #edef00;
   text-align: center;
   font-weight: 900;
-
+  border: 2px outset #000000;
 
 }
 
@@ -413,13 +414,13 @@ span {
 
 .inta:hover {
 
-  background-color: #8bff1f;
+  background-color: #00ff80;
 
 }
 
 .sectionc {
-  background-color: rgb(252, 197, 17);
-  
+  background-color:#ffff34;
+  border: 2px outset #000000;
   
 }
 
@@ -488,7 +489,8 @@ button:after {
 }
 
 .sectiond {
-  background-color: #c1c700;
+  border: 2px outset #000000;
+  background-color: #ffff61;
 }
 
 .lgo {
@@ -850,7 +852,8 @@ border-color: black !important;
 
 }
 .sectione {
-  background-color: #e0e36f;
+  border: 2px outset #000000;
+  background-color:#ffff83;
 }
 
 
@@ -858,9 +861,7 @@ border-color: black !important;
 padding-bottom: 40px;
 }
 
-.sectione {
-  background-color: #e0e36f;
-}
+
 
 .con{
   display: flex;
@@ -868,3 +869,7 @@ padding-bottom: 40px;
 
 }
 
+.hi{
+  background-color: #00ff80;
+
+}

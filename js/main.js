@@ -91,13 +91,13 @@ const ctx = document.getElementById('myChart');
 new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['HTML', 'CSS', 'SCSS', 'JAVASCRIPT', 'PHOTOSHOP'],
+    labels: ['HTML', 'CSS', 'SCSS', 'JAVASCRIPT', 'PHOTOSHOP', 'GIT'],
 
 
     datasets: [{
 
       label: 'Porcentaje de skills',
-      data: [90, 85, 50, 65, 30],
+      data: [90, 85, 50, 65, 30, 40],
 
       borderWidth: 3,
       hoverOffset: 30,
