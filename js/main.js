@@ -20,7 +20,11 @@ function toggleDarkMode() {
     enableDarkMode();
   }
 
-
+if (darkModeEnabled){
+  localStorage.setItem('dia',disableDarkMode() );
+}else if(!darkModeEnabled){
+  localStorage.setItem('a',enableDarkMode() );
+}
 
 }
 
@@ -47,9 +51,8 @@ button.addEventListener("click", function () {
 //inicialización libreria AOS
 AOS.init();
 
-//menu hambur
 
-//chart.js
+//sweet alert boton descargar
 
 
 let btn = document.getElementById('tn');
@@ -66,13 +69,13 @@ btn.addEventListener('click', () => {
   }).then((result) => {
     if (result.isConfirmed) {
 
-  
+
       setTimeout(function () {
 
         Swal.fire(
           'Su archivo se esta descargando',
           'success',
-          
+
           window.location.href = "./img/Emiliano_CamposCampazzo_CV (1).pdf"
         )
       }, 2000);
@@ -80,25 +83,38 @@ btn.addEventListener('click', () => {
 
     }
   })
-  
-  
+
+
 
 })
 
+//chart.js
 const ctx = document.getElementById('myChart');
+
+
 new Chart(ctx, {
-  type: 'pie',
+  type: 'bar',
   data: {
-    labels: ['HTML', 'CSS', 'SCSS', 'JAVASCRIPT'],
+    labels: ['HTML', 'CSS', 'SCSS', 'JAVASCRIPT', 'PHOTOSHOP'],
+
+
     datasets: [{
+
       label: 'Porcentaje de skills',
-      data: [90, 85, 85, 65],
-      borderWidth: 1,
-      hoverOffset: 30
-    }]
+      data: [90, 85, 50, 65, 30],
+
+      borderWidth: 3,
+      hoverOffset: 30,
+      backgroundColor: '#ee5522',
+      borderColor: 'black',
+      hoverBackgroundColor: '#ffaa3f'
+    }],
+
   },
 
   options: {
+    color: 'black',
+
     scales: {
       y: {
         beginAtZero: true
@@ -106,3 +122,4 @@ new Chart(ctx, {
     }
   }
 });
+
