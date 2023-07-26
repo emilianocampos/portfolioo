@@ -34,9 +34,7 @@ p {
   margin-bottom: 4rem;
 }
 
-.col {
-  margin-top: 10px !important;
-}
+
 
 
 .arrow {
@@ -55,7 +53,7 @@ p {
   display: flex !important;
   justify-content: center !important;
   margin-top: 50px;
-  background-color: #ffd035 !important;
+  background-color:  #ffd035 !important;
   width: 573px !important;
   margin-bottom: 180px;
   border-radius: 40px !important;
@@ -828,12 +826,12 @@ h1 {
 }
 
 div:where(.swal2-container).swal2-center>.swal2-popup {
-  background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(93,0,0,1) 100%);
+background: rgb(202,255,154);
+background: linear-gradient(180deg, rgba(202,255,154,1) 0%, rgba(116,244,0,1) 100%);
 }
 
 .swal2-title{
-  color: #ee5522;
+  color: #000000;
   font-size: 3rem !important;
 }
 .swal2-html-container{
