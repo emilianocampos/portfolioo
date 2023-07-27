@@ -1,15 +1,68 @@
 //inicialización libreria AOS
-AOS.init();
+
+let sonidoInicio = document.getElementById('sonidoInicio');
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Reproducir el sonido al iniciar la página
+  sonidoInicio.play();
+});
+
+
+
+let iconos = document.getElementsByClassName('red');
+let sonidoHover = document.getElementById('sonidoHover');
+
+function reproducirSonido() {
+  sonidoHover.currentTime = 0; // Reinicia el audio para que se pueda reproducir nuevamente al hacer hover
+  sonidoHover.play();
+}
+
+// Agregar el evento 'mouseover' a cada enlace con la clase 'red'
+for (let i = 0; i < iconos.length; i++) {
+ iconos[i].addEventListener('mouseover', reproducirSonido);
+}
+
+
+
+
+
+let pop = document.getElementById('menu-icon');
+
+
+function reproducirPop() {
+  let sonidoPop = document.getElementById('sonidoblop');
+  
+  sonidoPop.play();
+}
+
+pop.addEventListener('click', reproducirPop);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Habilitar DM AÑADE UNA CLASE AL CSS
 function enableDarkMode() {
   document.body.classList.add('dark-mode');
- 
+  localStorage.setItem('tema', 'dark-mode');
 }
 //Desabilitar DM /sacar .darkmode
 function disableDarkMode() {
   document.body.classList.remove('dark-mode');
-
+  localStorage.setItem('tema', 'dark-mode');
 }
 
 //alternador de DM 
@@ -22,20 +75,31 @@ function toggleDarkMode() {
     enableDarkMode();
   }
 
- 
-
 }
 
 
-//llamar btn + add event + cambiar <P id=mode> </P> (modo oscuro) cambiar p a nigth mode / day
+
+
+
+
+//llamar btn + add event + cambiar <P id=mode> </P> (modo oscuro) cambiar p a nigth mode / day + sonido
+
+function reproducirSonidoa() {
+  let sonido = document.getElementById("miSonido");
+  
+  sonido.play();
+}
+
+
+
 
 const button = document.getElementById('dark-butn');
+button.addEventListener('click', reproducirSonidoa);
 button.addEventListener('click', toggleDarkMode);
 
 button.addEventListener("click", function () {
 
   let modePara = document.getElementById("mode");
-
 
   if (modePara.textContent === "DAY MODE") {
 
@@ -48,7 +112,9 @@ button.addEventListener("click", function () {
 });
 
 
+
 //sweet alert boton descargar
+
 
 
 let btn = document.getElementById('tn');
@@ -84,7 +150,12 @@ btn.addEventListener('click', () => {
 
 })
 
+
+
 //chart.js
+
+
+
 const ctx = document.getElementById('myChart');
 
 
@@ -127,7 +198,17 @@ btnForm.addEventListener('click', () => {
 
   Swal.fire(
     'Mensaje Enviado',
-    
+
   )
 
 })
+
+
+
+
+
+
+AOS.init();
+
+
+
