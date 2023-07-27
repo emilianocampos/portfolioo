@@ -1,11 +1,3 @@
-//inicialización libreria AOS
-
-let sonidoInicio = document.getElementById('sonidoInicio');
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Reproducir el sonido al iniciar la página
-  sonidoInicio.play();
-});
 
 
 
@@ -19,7 +11,7 @@ function reproducirSonido() {
 
 // Agregar el evento 'mouseover' a cada enlace con la clase 'red'
 for (let i = 0; i < iconos.length; i++) {
- iconos[i].addEventListener('mouseover', reproducirSonido);
+  iconos[i].addEventListener('mouseover', reproducirSonido);
 }
 
 
@@ -31,7 +23,7 @@ let pop = document.getElementById('menu-icon');
 
 function reproducirPop() {
   let sonidoPop = document.getElementById('sonidoblop');
-  
+
   sonidoPop.play();
 }
 
@@ -86,7 +78,7 @@ function toggleDarkMode() {
 
 function reproducirSonidoa() {
   let sonido = document.getElementById("miSonido");
-  
+
   sonido.play();
 }
 
@@ -116,8 +108,14 @@ button.addEventListener("click", function () {
 //sweet alert boton descargar
 
 
+let des = document.getElementById('sonidodesc');
 
 let btn = document.getElementById('tn');
+
+function sonidoDescarga() {
+
+  des.play();
+}
 
 btn.addEventListener('click', () => {
   Swal.fire({
@@ -131,7 +129,7 @@ btn.addEventListener('click', () => {
   }).then((result) => {
     if (result.isConfirmed) {
 
-
+      sonidoDescarga();
       setTimeout(function () {
 
         Swal.fire(
@@ -140,10 +138,10 @@ btn.addEventListener('click', () => {
 
           window.location.href = "./img/Emiliano_CamposCampazzo_CV (1).pdf"
         )
-      }, 2000);
+      }, 1000);
 
 
-    }
+    } 
   })
 
 
@@ -205,7 +203,7 @@ btnForm.addEventListener('click', () => {
 
 
 
-
+//inicialización libreria AOS
 
 
 AOS.init();
