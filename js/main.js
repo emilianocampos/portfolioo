@@ -46,6 +46,9 @@ pop.addEventListener('click', reproducirPop);
 
 
 
+
+
+
 //Habilitar DM AÑADE UNA CLASE AL CSS
 function enableDarkMode() {
   document.body.classList.add('dark-mode');
